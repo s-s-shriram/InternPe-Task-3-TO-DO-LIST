@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced TO-DO List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">📋 TO-DO App</div>
+    <div class="date-time" id="date-time"></div>
+  </nav>
+
+  <!-- Main Wrapper -->
+  <div class="main-container">
+    <!-- Header Section -->
+    <header class="header">
+      <h1 class="typing-text">Organize Your Day ✨</h1>
+      <p>Stay productive and plan your tasks effectively.</p>
+    </header>
+
+    <!-- Task Input Section -->
+    <section class="task-input-section">
+      <input type="text" id="task-input" placeholder="Enter a task here..." />
+      <button id="add-btn">Add Task</button>
+    </section>
+
+    <!-- Task Filter Section -->
+    <section class="filter-section">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+    </section>
+
+    <!-- Task List Section -->
+    <section class="task-list-section">
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Task Stats Section -->
+    <section class="stats-section">
+      <p>Total Tasks: <span id="total-count">0</span></p>
+      <p>Completed: <span id="completed-count">0</span></p>
+      <p>Pending: <span id="pending-count">0</span></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with ❤️ by Shriram | &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

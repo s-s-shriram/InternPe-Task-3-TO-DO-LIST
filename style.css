@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.date-time {
+  font-size: 14px;
+}
+
+.main-container {
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: auto;
+  flex: 1;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.typing-text {
+  font-size: 24px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333;
+  animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.task-input-section {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#add-btn:hover {
+  background: #218838;
+}
+
+.filter-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin: 0 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #007bff;
+  color: white;
+}
+
+.task-list-section ul {
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  color: #6c757d;
+}
+
+.task span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.task button {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #c82333;
+}
+
+.stats-section {
+  margin-top: 20px;
+  font-size: 15px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
